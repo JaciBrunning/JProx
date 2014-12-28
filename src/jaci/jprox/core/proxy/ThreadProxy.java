@@ -22,6 +22,8 @@ public class ThreadProxy extends Thread {
         this.socket = clientSocket;
         this.setName("Proxy Thread: " + IP);
         this.start();
+
+        //TODO Connect, make connection and tunnel appended requests
     }
 
     @Override

@@ -21,7 +21,6 @@ public class ProxyDispatcher {
                     Preferences.blackboard.put("proxy:alive", true);
                     Logger.info("Started Server Proxy Socket on Port: " + port, true);
 
-
                     while (true == Preferences.blackboard.get("proxy:alive")) {
                         Socket clientSocket = socket.accept();
 
